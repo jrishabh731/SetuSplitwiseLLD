@@ -97,8 +97,6 @@ class ExpensesService(ExpensesAbstract):
 
     def add_expense(self, expense):
         try:
-            import pdb
-            pdb.set_trace()
             with self.session(bind=engine, expire_on_commit=False) as session:
                 split_map = expense.splitMap
                 del expense.splitMap

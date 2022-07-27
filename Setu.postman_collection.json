@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "29e5a227-4e32-4c50-9a23-8d10c45b33aa",
+		"name": "Setu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/users?userID=akshay",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "userID",
+							"value": "akshay"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Expenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.61.21.144:80/expenses?userID=b",
+					"host": [
+						"10",
+						"61",
+						"21",
+						"144"
+					],
+					"port": "80",
+					"path": [
+						"expenses"
+					],
+					"query": [
+						{
+							"key": "startTime",
+							"value": "2022-07-27",
+							"disabled": true
+						},
+						{
+							"key": "endTime",
+							"value": "2022-07-28",
+							"disabled": true
+						},
+						{
+							"key": "userID",
+							"value": "b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Expenses - Equal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\": \"a\",\r\n    \"groupID\": 1,\r\n    \"amountPaid\": 100,\r\n    \"splitType\": \"equal\"\r\n    \"SplitMap\": [{\r\n        \"userID\": \"\"\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/expenses",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Expenses - Exact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\": \"a\",\r\n    \"groupID\": 1,\r\n    \"amountPaid\": 100,\r\n    \"splitType\": \"exact\",\r\n    \"splitMap\": {\r\n            \"a\": 20,\r\n            \"b\": 80\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.61.21.144:80/expenses",
+					"host": [
+						"10",
+						"61",
+						"21",
+						"144"
+					],
+					"port": "80",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"akshay\",\r\n    \"userName\": \"akshay\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:80/groups?groupID=office",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"groups"
+					],
+					"query": [
+						{
+							"key": "groupID",
+							"value": "office"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Groups",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/groups?groupID=office",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"groups"
+					],
+					"query": [
+						{
+							"key": "groupID",
+							"value": "office"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Overview GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.61.21.144:80/overview?userLender=a",
+					"host": [
+						"10",
+						"61",
+						"21",
+						"144"
+					],
+					"port": "80",
+					"path": [
+						"overview"
+					],
+					"query": [
+						{
+							"key": "userLender",
+							"value": "a"
+						},
+						{
+							"key": "userBorrower",
+							"value": "b",
+							"disabled": true
+						},
+						{
+							"key": "groupID",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
