@@ -58,6 +58,22 @@ Select userIDBorrower, Sum(amount) From Overview where userIDBorrower='a';
 Select userIDLender, userIDBorrower, Sum(amount) From Overview where userIDBorrower='a' and userIDLender='b';;
 4. All above queries can be also filtered on groupID.
 
+Pending:
+1. Settling amount
+
+Testing Scenarios Done:
+1. Create and Get users
+2. Create and Get Groups
+3. Create an expense with equal share
+4. Create an expense with exact share
+5. Validate transactions created after adding expense
+6. Fetch transactions for an user across all groups
+7. Get overview for a user. 
+
+Further Improvements:
+1. Adding Pydantic and all validations to avoid duplicate, missing, inconsistent data.
+
+
 Project Structure:
 ```
 ├── database
