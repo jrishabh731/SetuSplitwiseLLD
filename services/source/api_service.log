@@ -1,0 +1,52 @@
+2022-07-27 01:09:36,689 :ERROR :Users.py[add_users]: 43: Error occured: Class 'builtins.tuple' is not mapped
+2022-07-27 01:18:42,782 :INFO :main.py[get_users]: 34: Received get requests for Appointment ID : 011
+2022-07-27 01:18:48,175 :INFO :main.py[get_users]: 34: Received get requests for Appointment ID : rishabh
+2022-07-27 01:18:52,345 :INFO :main.py[get_users]: 34: Received get requests for Appointment ID : akshay
+2022-07-27 01:26:00,863 :ERROR :Groups.py[create_groups]: 46: Error occured: Class 'builtins.tuple' is not mapped
+2022-07-27 01:26:16,394 :ERROR :Groups.py[create_groups]: 46: Error occured: Class 'builtins.tuple' is not mapped
+2022-07-27 01:26:34,492 :ERROR :Groups.py[create_groups]: 46: Error occured: add_all() got an unexpected keyword argument 'groupId'
+2022-07-27 01:27:29,497 :ERROR :Groups.py[create_groups]: 46: Error occured: 'groupMembers' is an invalid keyword argument for GroupsModel
+2022-07-27 01:35:30,840 :INFO :main.py[get_users]: 23: Received get requests for Appointment ID : office
+2022-07-27 02:53:29,365 :ERROR :Users.py[add_users]: 33: Error occured: 'userId' is an invalid keyword argument for UsersModel
+2022-07-27 02:53:52,651 :ERROR :Users.py[add_users]: 33: Error occured: 'userId' is an invalid keyword argument for UsersModel
+2022-07-27 02:59:58,490 :ERROR :Groups.py[create_groups]: 47: Error occured: 'Groups' object has no attribute 'groupId'
+2022-07-27 03:00:21,963 :ERROR :Groups.py[create_groups]: 47: Error occured: 'Groups' object has no attribute 'groupId'
+2022-07-27 03:02:22,294 :ERROR :Groups.py[create_groups]: 50: Error occured: 'GroupsModel' object has no attribute 'groupId'
+2022-07-27 03:02:46,989 :ERROR :Groups.py[create_groups]: 50: Error occured: 'groupId' is an invalid keyword argument for GroupMembershipModel
+2022-07-27 03:05:52,356 :ERROR :Expenses.py[add_expense]: 45: Exception occured: (psycopg2.ProgrammingError) can't adapt type 'Row'
+[SQL: INSERT INTO transaction ("transactionTimestamp", "expenseID", "groupID", "userID", "amountPaid", "settlementTimestamp", "SettlementStatus") VALUES (%(transactionTimestamp)s, %(expenseID)s, %(groupID)s, %(userID)s, %(amountPaid)s, %(settlementTimestamp)s, %(SettlementStatus)s) RETURNING transaction."transactionID"]
+[parameters: ({'transactionTimestamp': None, 'expenseID': 1, 'groupID': '5', 'userID': (3,), 'amountPaid': 50.0, 'settlementTimestamp': None, 'SettlementStatus': False}, {'transactionTimestamp': None, 'expenseID': 1, 'groupID': '5', 'userID': (4,), 'amountPaid': 50.0, 'settlementTimestamp': None, 'SettlementStatus': False})]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-07-27 03:05:52,357 :ERROR :Expenses.py[add_expense]: 51: Error occured: 
+2022-07-27 03:26:19,586 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 3
+2022-07-27 03:30:12,837 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 03:55:14,820 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 03:57:47,283 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 03:59:10,143 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 04:00:33,247 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 04:00:46,794 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 04:01:05,076 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:07:30,630 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:12:06,943 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:12:06,950 :ERROR :Expenses.py[get_expense]: 39: Error occured: local variable 'transactions' referenced before assignment
+2022-07-27 09:12:41,208 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:13:12,602 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:13:49,564 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 4
+2022-07-27 09:13:55,733 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 5
+2022-07-27 09:13:59,548 :INFO :main.py[get_expenses]: 47: Received get requests for Appointment ID : 3
+2022-07-27 09:35:27,886 :INFO :main.py[get_expenses]: 52: Received get requests for Appointment ID : 3
+2022-07-27 09:38:30,327 :INFO :main.py[get_expenses]: 52: Received get requests for Appointment ID : 3
+2022-07-27 09:38:52,117 :INFO :main.py[get_expenses]: 52: Received get requests for Appointment ID : 3
+2022-07-27 09:40:01,226 :INFO :main.py[get_expenses]: 52: Received get requests for Appointment ID : 3
+2022-07-27 09:41:45,829 :INFO :main.py[get_expenses]: 52: Received get requests for Appointment ID : 3
+2022-07-27 10:06:16,175 :ERROR :Expenses.py[get_expense]: 50: Error occured: 
+2022-07-27 10:42:06,819 :ERROR :Expenses.py[get_expense]: 43: Error occured: unsupported operand type(s) for +=: 'int' and 'tuple'
+2022-07-27 11:41:51,517 :INFO :main.py[get_users]: 45: Received get requests for Appointment ID : akshay
+2022-07-27 11:45:48,470 :INFO :main.py[get_users]: 45: Received get requests for Appointment ID : akshay
+2022-07-27 11:45:53,729 :INFO :main.py[get_users]: 45: Received get requests for Appointment ID : rishabh
+2022-07-27 11:48:52,230 :INFO :main.py[get_users]: 34: Received get requests for Appointment ID : office
+2022-07-27 12:59:22,709 :ERROR :expenses_service.py[add_expense]: 149: Error occured: filter() got an unexpected keyword argument 'userIDLender'
+2022-07-27 13:31:14,143 :ERROR :overview_service.py[get_overview]: 32: Error occured: 'Query' object is not callable
+2022-07-27 13:46:02,042 :ERROR :overview_service.py[get_overview]: 35: Error occured: 
+2022-07-27 13:47:09,600 :ERROR :overview_service.py[get_overview]: 35: Error occured: type object 'OverviewModel' has no attribute 'query'
+2022-07-27 13:53:13,822 :ERROR :overview_service.py[get_overview]: 37: Error occured: 
